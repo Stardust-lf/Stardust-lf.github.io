@@ -1,4 +1,15 @@
-Education
+---
+permalink: /
+title: "Education"
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% include base_path %}
+  
 ======
 * B.Eng in LanZhou University, Gansu, China, 2019-2023
 * Msc in City University of HongKong, HKSAR, China, 2023(Till now)
