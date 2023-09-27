@@ -18,7 +18,7 @@ Research experience
 ======
 * Sep 2020 - Apr 2022: Learning Deep Gait Features in Koopman Domain via Invertible Neural Network
   * LanZhou University
-  * Duties included: Model and experiments implemention, Data visualization, Writing manuscript
+  * Duties included: Model and experiments implemention, Data visualization, Writing manuscript(arxiv.org/abs/2309.14764)
   * Supervisor: Professor Liu
 
 * Mar 2022 - June 2023: Manifold Learning Framework for Interpretable Parkinson's Diagnosis
