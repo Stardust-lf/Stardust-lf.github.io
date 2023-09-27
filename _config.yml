@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Stardust-lf"
+  name             : "Fan Li"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "B.Eng in Computer Science and Technology"
   location         : "Hong Kong, China"
   employer         :
   pubmed           :
   googlescholar    : 
-  email            : "fanl1@foxmail.com"
+  email            : "fanl42-c@my.cityu.edu.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
