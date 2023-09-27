@@ -10,7 +10,6 @@ redirect_from:
 
 {% include base_path %}
   
-======
 * B.Eng in LanZhou University, Gansu, China, 2019-2023
 * Msc in City University of HongKong, HKSAR, China, 2023(Till now)
 
