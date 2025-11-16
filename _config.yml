@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Homepage for Fan"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Fan Li"
 description              : &description "Phd Student"
@@ -22,14 +22,14 @@ repository               : "Stardust-lf/Stardust-lf.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "selfig2.jpg"
   name             : "Fan Li"
-  pronouns         : "he/him" # example: "she/her"  
-  bio              : "PhD Student"
-  location         : "USA"
-  employer         : "University of Central Florida"
+  pronouns         : "Fann Lee"
+  bio              : 
+  location         : 
+  employer         : 
   uri              : # URL
-  email            : "frozenstar200101@gmail.com" 
+  email            : "fan.li@ucf.edu" 
 
   # Academic websites
   academia         : # URL

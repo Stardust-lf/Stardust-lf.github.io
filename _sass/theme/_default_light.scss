@@ -17,7 +17,7 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
+$border-radius              : 1px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
@@ -27,21 +27,101 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
+/* :root { */
+    /* --global-base-color                 : #{$gray}; */
+    /* --global-bg-color                   : #fff; */
+    /* --global-footer-bg-color            : #f2f3f3; */
+    /* --global-border-color               : #{$lighter-gray}; */
+    /* --global-dark-border-color          : #bdc1c4; */
+    /* --global-code-background-color      : #fafafa; */
+    /* --global-code-text-color            : #{$darker-gray}; */
+    /* --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%); */
+    /* --global-link-color                 : #52adc8; */
+    /* --global-link-color-hover           : mix(#000, #2f7f93, 25%); */
+    /* --global-link-color-visited         : mix(#fff, #2f7f93, 25%); */  
+    /* --global-masthead-link-color        : #{$dark-gray}; */
+    /* --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%); */    
+    /* --global-text-color                 : #{$dark-gray}; */
+    /* --global-text-color-light           : #{$light-gray}; */
+    /* --global-thead-color                : #{$lighter-gray}; */
+/* } */
+
+/* Light blues */
+$blue-50      : #f5faff;  // Very light icy blue
+$blue-100     : #e8f2ff;  // Soft pale blue
+$blue-200     : #d6e6ff;  // Gentle cool blue
+$blue-300     : #b8d2ff;  // Light sky blue
+
+/* Primary blues */
+$blue-400     : #8fb6ff;  // Light brand blue
+$blue-500     : #5f93ff;  // Standard modern blue
+$blue-600     : #3f73c2;  // Muted premium royal blue
+$blue-700     : #2e59a1;  // Deep elegant blue
+
+/* Dark blues */
+$blue-800     : #203d73;  // Rich dark navy-blue
+$blue-900     : #142645;  // Very dark navy
+
+/* Desaturated / gray-blues */
+$blue-gray-100: #eff3f7;  // Soft cold gray-blue
+$blue-gray-200: #d9e1ea;  // Light bluish gray
+$blue-gray-300: #b9c5d1;  // Modern gray-blue
+$blue-gray-400: #8c99a6;  // Muted steel blue-gray
+$blue-gray-500: #5d6b78;  // Cool industrial gray-blue
+
+/* Vibrant / vivid blues */
+$blue-vivid-400: #4ba3ff; // Vivid clean blue
+$blue-vivid-500: #1e88ff; // Strong vibrant blue
+$blue-vivid-600: #006bdb; // Bold vivid royal blue
+
+/* Luxury / premium blues */
+$blue-ink-500  : #1a2e44; // Ink blue (premium)
+$blue-ink-600  : #0d1f33; // Deep ink
+$blue-sapphire : #133b5c; // Luxury sapphire blue
+$blue-cobalt   : #1e3f78; // Cobalt blue
+$blue-lapis    : #264e86; // Lapis lazuli blue
+
+/* Light yellows */
+$yellow-50       : #fffdf5; // Very light warm off-white yellow
+$yellow-100      : #fff9e6; // Soft pale yellow
+$yellow-200      : #fff3c7; // Gentle cream yellow
+$yellow-300      : #ffeaaa; // Light pastel yellow
+
+/* Primary soft yellows */
+$yellow-400      : #ffe082; // Modern soft yellow
+$yellow-500      : #ffd54f; // Standard mellow yellow (material-like)
+$yellow-600      : #fbc02d; // Warm richer yellow
+$yellow-700      : #f2a600; // Soft amber yellow
+
+/* Dark yellows / ambers */
+$yellow-800      : #d18f00; // Muted amber
+$yellow-900      : #8f6500; // Deep warm brown-yellow
+
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
-    --global-border-color               : #{$lighter-gray};
-    --global-dark-border-color          : #bdc1c4;
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+    /* Base neutrals */
+    --global-base-color                : #405060; /* Neutral cool gray-blue */
+    --global-bg-color                  : #{$yellow-50}; /* Soft cold white */
+    --global-footer-bg-color           : #EEF2F7; /* Subtle cool footer */
+    --global-border-color              : #{$blue-500}; /* Light cold border */
+    --global-dark-border-color         : #B6C0CC; /* Slightly darker cool border */
+
+    /* Typography */
+    --global-text-color                : #1B1F2A; /* Deep elegant near-black */
+    --global-text-color-light          : #6E7A89; /* Muted cool gray */
+    --global-fig-caption-color         : #55606D; /* Soft bluish caption */
+    --global-thead-color               : #E7ECF3; /* Soft cool header bg */
+
+    /* Code block */
+    --global-code-background-color     : #F2F5FA; /* Gentle cold background */
+    --global-code-text-color           : #202A36; /* Dark cool gray */
+
+    /* Blue accents (brand color) */
+    --global-link-color                : #3A73C2; /* Premium muted royal blue */
+    --global-link-color-hover          : #2E59A1; /* Deeper elegant blue */
+    --global-link-color-visited        : #4E6FA8; /* Slightly desaturated mature blue */
+
+    /* Navigation */
+    --global-masthead-link-color       : #2A3340; /* Refined cool dark */
+    --global-masthead-link-color-hover : #0F1722; /* Clean crisp deep hover */
 }
+

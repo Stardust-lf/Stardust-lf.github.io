@@ -41,3 +41,38 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Fully hide sitemap at footer */
+.page__footer-follow,
+.page__footer-links,
+.page__footer {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Make author profile text larger */
+/* .author__content, */
+/* .author__bio, */
+/* .author__intro { */
+  /* font-size: 2.35rem;  // adjust as needed */
+  /* line-height: 3.6; */
+/* } */
+
+/* Author name */
+/* .author__name { */
+  /* font-size: 1.2rem; */
+  /* font-weight: 700; */
+/* } */
+
+
+/* .author__urls li a { */
+  /* font-size: 1.1rem; */
+/* } */
+
+/* .author__urls i, */
+/* .author__urls svg { */
+  /* font-size: 1rem;  /* 保持原大小 */ 
+/* } */

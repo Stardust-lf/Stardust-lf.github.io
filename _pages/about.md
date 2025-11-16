@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Fan Li | Ph.D. Student in Electrical and Computer Engineering"
+title: "Bio"
 author_profile: true
 redirect_from: 
   <!-- - /about/ -->
   - /about.html
 ---
-Welcome
-======
+<!-- Welcome -->
+<!-- ====== -->
 
 I am **Fan Li**, a Ph.D. student in the Department of Electrical and Computer Engineering at the University of Central Florida (UCF).  
 My research interests include **computer architecture, memory systems, and dependable computing**.

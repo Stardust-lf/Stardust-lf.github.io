@@ -51,7 +51,7 @@
 
   p, li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
     line-height: 1.5;
   }
 
@@ -128,8 +128,10 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  /* font-family: "Times New Roman"; */
+  font-family: "Playfair Display";
+  font-size: $type-size-1;
+  /* text-align: center; */
 }
 
 .sidebar .author__desktop {
@@ -161,7 +163,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: 'Playfair Display';
   z-index: 10;
   position: relative;
   cursor: pointer;
