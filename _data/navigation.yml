@@ -9,13 +9,13 @@
 
 main:
   - title: "Publications"
-    url: /publications/
+    url: "/#publications"
 
   - title: "Projects"
-    url: /projects/
+    url: "/#projects"
 
-  # - title: "Talks"
-    # url: /talks/    
+  - title: "Awards"
+    url: "/#awards"
 
   # - title: "Teaching Assistant"
   #   url: /teaching/    
@@ -26,8 +26,11 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
+
+  - title: "Life"
+    url: /life/    
     
   # - title: "CV"
   #   url: /cv-json/

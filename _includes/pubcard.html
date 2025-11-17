@@ -1,0 +1,64 @@
+{% if include.link %}
+<a href="{{ include.link }}" style="text-decoration:none; color:inherit;">
+{% endif %}
+
+<div style="
+  display: flex; 
+  margin-bottom: 35px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.2s ease;
+"
+onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+onmouseout="this.style.boxShadow='none'">
+
+  <!-- LEFT -->
+  <div style="
+      position: relative; 
+      width:260px; 
+      height:160px; 
+      flex-shrink:0; 
+      margin-right: 20px; 
+      overflow:hidden; 
+      border-radius:6px;
+  ">
+
+    <img src="{{ include.img }}"
+         style="width:100%; height:100%; object-fit:cover;">
+
+    <div style="
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        background:rgba(0,0,0,0.65);
+        color:white;
+        padding:5px 10px;
+        font-size:13px;
+        font-weight:bold;
+        text-align:left;
+    ">
+      {{ include.venue }}
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div style="flex:1;">
+    <strong style="font-size: 18px;">{{ include.title }}</strong>
+    <br>
+    <em>{{ include.authors }}</em>
+
+    {% if include.desc %}
+      <br><br>
+      <span style="color:#444; line-height:1.5;">
+        {{ include.desc }}
+      </span>
+    {% endif %}
+  </div>
+
+</div>
+
+{% if include.link %}
+</a>
+{% endif %}
