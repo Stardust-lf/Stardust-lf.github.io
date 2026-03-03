@@ -39,18 +39,18 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor/font-awesome/brands",
+
+    "layout/custom"
 ;
 
-/* Fully hide sitemap at footer */
-.page__footer-follow,
-.page__footer-links,
-.page__footer {
+/* Minimal footer — hide clutter, keep copyright */
+.page__footer-follow {
   display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
+}
+
+.page__footer-links {
+  display: none !important;
 }
 
 /* Make author profile text larger */
