@@ -22,6 +22,7 @@ author_profile: true
     venue="IEEE HPCA 2026 (Top-tier)"
     title="ASPA: Reassigning DDR5 Parity Bandwidth"
     authors="<strong>Fan Li</strong>, Qiufeng Li, Yanan Guo, Weidong Cao, Xin Xin*"
+    link="https://ieeexplore.ieee.org/document/11408447"
     desc="We reclaim the 25% parity bandwidth overhead in DDR5 by leveraging on-die CRC units to generate lightweight second-tier parity, boosting effective bandwidth without sacrificing reliability."
 %}
 </div>
