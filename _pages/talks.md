@@ -17,5 +17,5 @@ author_profile: true
   \[[Paper](https://ieeexplore.ieee.org/document/11282510)\] \[[Slides](/files/SCREME.pdf)\]
 
 - 🎤 **"PIM-SUM: Fast and Reliable In-Memory Summation for Recommendation Systems"**
-  <br>Conference Talk, *IEEE ICCD 2025*, Richardson, TX, USA, Nov 2025.
+  <br>Conference Talk, *IEEE ICCD 2025*, Dallas, TX, USA, Nov 2025.
   \[[Paper](https://ieeexplore.ieee.org/document/11311106)\] \[[Slides](/files/PIM-SUM.pdf)\]
