@@ -8,9 +8,10 @@ author_profile: true
 <div>
 {% include pubcard.html
     img="/assets/paper_poster/ASPLOS.png"
-    venue="ACM ASPLOS 2026 (Top-tier)"
+    venue="ACM ASPLOS 2026 (Top-tier, CCF-A)"
     title="ReliaFHE: Resilient Design for Fully Homomorphic Encryption Accelerators"
     authors="<strong>Fan Li</strong>, Mayank Kumar, Ruizhi Zhu, Mengxin Zheng, Qian Lou, Xin Xin*"
+    link="https://dl.acm.org/doi/10.1145/3779212.3790211"
     desc="We integrate lightweight checksum-based protection into FHE accelerators, tailored for NTT, base conversion, and element-wise kernels. ReliaFHE improves reliability by over 10,000x with only ~1.5% performance overhead."
 %}
 </div>
@@ -19,7 +20,7 @@ author_profile: true
 <div>
 {% include pubcard.html
     img="/assets/paper_poster/HPCA.png"
-    venue="IEEE HPCA 2026 (Top-tier)"
+    venue="IEEE HPCA 2026 (Top-tier, CCF-A)"
     title="ASPA: Reassigning DDR5 Parity Bandwidth"
     authors="<strong>Fan Li</strong>, Qiufeng Li, Yanan Guo, Weidong Cao, Xin Xin*"
     link="https://ieeexplore.ieee.org/document/11408447"
