@@ -9,7 +9,7 @@ redirect_from:
 Bio
 ======
 
-I am **Fan Li**, a Ph.D. student in Electrical and Computer Engineering at the University of Central Florida (UCF), advised by [Prof. Xin Xin](https://xinx2013.github.io/) in the [MemArch Lab](https://xinx2013.github.io/).
+I am **Fan Li**, a Ph.D. student in Electrical and Computer Engineering at the University of Central Florida (UCF), advised by [Prof. Xin Xin](https://xinx2013.github.io/advisor.html) in the [MemArch Lab](https://xinx2013.github.io/).
 
 My research focuses on **computer architecture** and **reliable computing**, spanning memory system optimization, hardware accelerator reliability, and emerging computing paradigms. My work has been published at top-tier international conferences including **ASPLOS**, **HPCA**, **PACT**, and **ICCD**.
 
@@ -28,10 +28,3 @@ News
   <li><span class="news-date">[Aug 2025]</span> Papers accepted at <em>PACT 2025</em> and <em>ICCD 2025</em>.</li>
 </ul>
 
----
-
-Professional Service
-======
-
-- **Reviewer**, IEEE Internet of Things Journal (IoT-J)
-- **Reviewer**, Electronics Letters
