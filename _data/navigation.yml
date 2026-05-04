@@ -20,6 +20,9 @@ main:
   - title: "Awards"
     url: /awards/
 
+  - title: "Services"
+    url: /services/
+
   # - title: "Teaching Assistant"
   #   url: /teaching/    
     

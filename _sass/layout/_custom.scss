@@ -1,91 +1,87 @@
 /* ==========================================================================
-   CUSTOM STYLES — typography, spacing & polish
+   CUSTOM STYLES — clean academic style
    ========================================================================== */
 
 /* ---------- Global ---------- */
 html {
   scroll-behavior: smooth;
-  font-size: 17px;            /* bump base from 16 → 17 for comfort */
+  font-size: 16px;
 }
 
 body {
-  line-height: 1.7;
-  letter-spacing: 0.01em;
+  line-height: 1.75;
+  letter-spacing: 0.005em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* ---------- Masthead / Navigation ---------- */
 .masthead {
-  backdrop-filter: blur(12px);
-  background: rgba(255, 253, 245, 0.88);
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 html[data-theme="dark"] .masthead {
-  background: rgba(26, 29, 35, 0.90);
+  background: rgba(26, 29, 35, 0.95);
+  border-bottom: 1px solid #333;
 }
 
 .masthead__inner-wrap {
-  padding: 0.7em 1.5em !important;
+  padding: 0.6em 1.5em !important;
 }
 
 .greedy-nav .visible-links a {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  padding: 0.5em 0.8em;
-  border-radius: 6px;
-  transition: background 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.01em;
+  padding: 0.5em 0.7em;
+  transition: color 0.2s ease;
 }
 
 .greedy-nav .visible-links a:hover {
-  background: rgba(58, 115, 194, 0.08);
+  color: var(--global-link-color);
 }
 
-html[data-theme="dark"] .greedy-nav .visible-links a:hover {
-  background: rgba(91, 184, 212, 0.12);
-}
-
-/* ---------- Content area — vertical rhythm ---------- */
+/* ---------- Content area ---------- */
 #main {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 .page__content {
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.8;
 
   p {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.1em;
   }
 
-  /* Section headings (h1 = ====== in markdown) */
+  /* Section headings */
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-top: 2.2em;
-    margin-bottom: 1em;
-    padding-left: 14px;
-    border-left: 4px solid var(--global-link-color);
-    letter-spacing: -0.01em;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #333;
+    border-left: none;
+    padding-left: 0;
+    letter-spacing: 0;
   }
 
-  /* Sub headings */
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-top: 1.8em;
-    margin-bottom: 0.6em;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
   }
 
-  /* Lists */
   ul, ol {
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
   }
 
   li {
-    margin-bottom: 0.4em;
-    line-height: 1.65;
+    margin-bottom: 0.35em;
+    line-height: 1.7;
   }
 }
 
@@ -93,33 +89,18 @@ html[data-theme="dark"] .greedy-nav .visible-links a:hover {
 .page__content hr {
   border: none;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--global-border-color) 20%,
-    var(--global-border-color) 80%,
-    transparent
-  );
-  margin: 2.5em 0;
+  background: #ddd;
+  margin: 2em 0;
 }
 
 /* ---------- Sidebar / Author profile ---------- */
 .author__avatar img {
-  max-width: 160px !important;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.author__avatar img:hover {
-  box-shadow: 0 0 20px rgba(58, 115, 194, 0.35);
-  transform: scale(1.02);
-}
-
-html[data-theme="dark"] .author__avatar img:hover {
-  box-shadow: 0 0 20px rgba(91, 184, 212, 0.35);
+  max-width: 150px !important;
+  border-radius: 4px;
 }
 
 .author__urls a {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   transition: color 0.2s ease;
 }
 
@@ -132,37 +113,36 @@ html[data-theme="dark"] .author__avatar img:hover {
 .project-card {
   display: flex;
   align-items: stretch;
-  margin-bottom: 24px;
-  padding: 16px;
-  border-radius: 10px;
-  border: 1px solid var(--global-border-color);
-  background: var(--global-bg-color);
-  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  transition: border-color 0.2s ease;
   text-decoration: none;
   color: inherit;
 }
 
 .pub-card:hover,
 .project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
   border-color: var(--global-link-color);
 }
 
-html[data-theme="dark"] .pub-card:hover,
-html[data-theme="dark"] .project-card:hover {
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+html[data-theme="dark"] .pub-card,
+html[data-theme="dark"] .project-card {
+  background: var(--global-bg-color);
+  border-color: #444;
 }
 
 /* Card image */
 .card__image {
   position: relative;
-  width: 280px;
-  height: 175px;
+  width: 260px;
+  height: 165px;
   flex-shrink: 0;
-  margin-right: 22px;
+  margin-right: 18px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 .card__image img {
@@ -170,12 +150,6 @@ html[data-theme="dark"] .project-card:hover {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.4s ease;
-}
-
-.pub-card:hover .card__image img,
-.project-card:hover .card__image img {
-  transform: scale(1.05);
 }
 
 /* Card badge */
@@ -184,10 +158,10 @@ html[data-theme="dark"] .project-card:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
   color: #fff;
-  padding: 18px 12px 8px;
-  font-size: 0.78rem;
+  padding: 16px 10px 6px;
+  font-size: 0.76rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
@@ -202,8 +176,7 @@ html[data-theme="dark"] .project-card:hover {
 }
 
 .card__title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 650;
   line-height: 1.35;
   margin-bottom: 4px;
@@ -211,16 +184,16 @@ html[data-theme="dark"] .project-card:hover {
 
 .card__authors {
   font-style: italic;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--global-text-color-light);
   line-height: 1.5;
 }
 
 .card__desc {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--global-text-color-light);
   line-height: 1.6;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 html[data-theme="dark"] .card__desc,
@@ -233,51 +206,18 @@ html[data-theme="dark"] .card__authors {
   .pub-card,
   .project-card {
     flex-direction: column;
-    padding: 12px;
+    padding: 10px;
   }
 
   .card__image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     margin-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .card__title {
-    font-size: 1rem;
-  }
-}
-
-/* ---------- Talks section ---------- */
-.page__content li strong {
-  letter-spacing: -0.005em;
-}
-
-/* ---------- Text selection ---------- */
-::selection {
-  background: var(--global-link-color);
-  color: #fff;
-}
-
-/* ---------- Fade-in animation ---------- */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.page__content > * {
-  animation: fadeInUp 0.45s ease both;
-}
-
-@for $i from 1 through 25 {
-  .page__content > *:nth-child(#{$i}) {
-    animation-delay: #{$i * 0.03}s;
+    font-size: 0.95rem;
   }
 }
 
@@ -289,9 +229,9 @@ html[data-theme="dark"] .card__authors {
 }
 
 .news-list li {
-  padding: 0.45em 0;
-  border-bottom: 1px solid var(--global-border-color);
-  line-height: 1.65;
+  padding: 0.4em 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.7;
 }
 
 .news-list li:last-child {
@@ -300,16 +240,33 @@ html[data-theme="dark"] .card__authors {
 
 .news-date {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--global-link-color);
   margin-right: 0.4em;
 }
 
+/* ---------- Links ---------- */
+.page__content a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.page__content a:hover {
+  border-bottom-color: var(--global-link-color);
+}
+
 /* ---------- Minimal footer ---------- */
 .page__footer {
   font-size: 0.72rem;
-  opacity: 0.45;
+  opacity: 0.4;
   text-align: center;
   padding: 1.5em 0;
+}
+
+/* ---------- Text selection ---------- */
+::selection {
+  background: var(--global-link-color);
+  color: #fff;
 }
